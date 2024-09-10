@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="examples">
+
+        <!-- Button One -->
+         <button class="button-one" aria-controls="primary-navigation" aria-expanded="false">
+            <svg fill="var(--button-color)" class="hamburger" viewbox="0 0 100 100" width="250">
+                <!-- For rounded corners rx should be half the x value -->
+                <rect class="line top" width="80" height="10" x="10" y="25" rx="5"></rect>
+                <rect class="line middle" width="80" height="10" x="10" y="45" rx="5"></rect>
+                <rect class="line bottom" width="80" height="10" x="10" y="65" rx="5"></rect>
+            </svg>
+         </button>
+
+        <!-- Button Two -->
+        <button class="button-two">
+            <svg stroke="var(--button-color)" fill="var(--button-color)" class="hamburger" viewbox="0 0 100 100" width="250">
+                <!-- The values for x1 and x2 control the transition slide direction -->
+                <line class="line top" x1="90" x2="10" y1="40" y2="40" 
+                        stroke-width="10" stroke-linecap="round" stroke-dasharray="80" stroke-dashoffset="0"></line>
+                <!-- Notice the top x values are 90 and 10 these are 10 and 90-->
+                <line class="line bottom" x1="10" x2="90" y1="60" y2="60" 
+                        stroke-width="10" stroke-linecap="round" stroke-dasharray="80" stroke-dashoffset="0"></line>
+            </svg>
+        </button>
+        
+        <!-- Button Three -->
+        <button class="button-three">
+            
+        </button>        
+
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
